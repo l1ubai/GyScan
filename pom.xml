@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.alan.burp</groupId>
-    <artifactId>SpringActuatorUnauthorized</artifactId>
-    <version>1.1</version>
+    <artifactId>AllScanScanScan</artifactId>
+    <version>1.5</version>
     <build>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
@@ -67,6 +67,11 @@
             <artifactId>burp-extender-api</artifactId>
             <version>1.7.22</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.70</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
@@ -94,6 +99,16 @@
             <groupId>org.beanshell</groupId>
             <artifactId>bsh</artifactId>
             <version>2.0b5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.9.3</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.12</version>
         </dependency>
     </dependencies>
 </project>

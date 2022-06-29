@@ -1,0 +1,29 @@
+{
+	//配置不扫描的名单
+	"blacklist":"servicewechat.com,ingest.sentry.io,firefox.com,tencent-cloud.com,amap.com,googleapis.com,mozilla.cloudflare-dns.com,mozilla.com,mumu.nie.netease.com,wx.qlogo.cn,qq.com,mozilla.org,firefoxchina.cn,baidu.com,bdstatic.com,firefox.cn,mozilla.net,fofa.info,qpic.cn,g-fox.cn,firefox.com.cn,qlogo.cn,rss.ink",
+
+	//配置以下漏洞是否扫描
+	"levelMake":false,
+
+	"thinkphp":false,
+
+	"log4j":true,
+	
+	"shiro":true,
+
+	"springcloud":false,
+
+	"sqlinjection":true,
+
+	"fastjson":true,
+
+	"weblogic":true,
+
+	"SpringActuator Cross":true,
+
+	//配置ceye
+	"ceyeDomain":"x",
+
+	"ceyeToken":"x"
+
+}

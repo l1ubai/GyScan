@@ -15,16 +15,19 @@ public class Menu implements IContextMenuFactory {
 
     public List createMenuItems(final IContextMenuInvocation invocation) {
         List list = new ArrayList();
-        JMenuItem jMenuItem = new JMenuItem("..; Cross Scan");
+        JMenuItem jMenuItem = new JMenuItem("Thinkphp Scan");
+        JMenuItem jMenuItem2 = new JMenuItem("Thinkphp Scan2");
         list.add(jMenuItem);
+        list.add(jMenuItem2);
         jMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 final IHttpRequestResponse[] requestResponseList = invocation.getSelectedMessages();
                 (new Thread(() -> {
-                    Menu.this.burpExtender.doScan(requestResponseList[0]);
+                    Menu.this.burpExtender.doThinkphpScan(requestResponseList[0]);
                 })).start();
             }
         });
+
         return list;
     }
 }
