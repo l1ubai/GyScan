@@ -41,7 +41,7 @@ public class BurpExtender extends AbstractTableModel implements IBurpExtender, I
     private JTabbedPane Rtable;
     private JSplitPane mjSplitPane;
     //mac
-    static File file = new File("/Users/hh/Desktop/plugin/SpringActuator-Unauthorized-Scan-main/src/config.json");
+    static File file = new File("/Users/hh/config.json");
     //win
     //static File file = new File("C://config.json");
     static JSONObject configjson;
@@ -91,8 +91,8 @@ public class BurpExtender extends AbstractTableModel implements IBurpExtender, I
         helpers = callbacks.getHelpers();
         this.stdout.println("===========================");
         this.stdout.println("[+]   load successful!     ");
-        this.stdout.println("[+]Scna Scan Scan ALL!!!!!!");
-        this.stdout.println("[+]   code by zzzz v1.5     ");
+        this.stdout.println("[+]   ddb ALL!!!!!!        ");
+        this.stdout.println("[+] code by l1ubai v1.5    ");
         this.stdout.println("===========================");
 
         SwingUtilities.invokeLater(new Runnable() {
